@@ -1,3 +1,9 @@
-<app-content-projektion
-  ><app-echo [value]="'simple content projection'"
-/></app-content-projektion>
+<div class="root">
+  <app-content-projektion>
+    <app-echo [value]="'simple content projection'" />
+  </app-content-projektion>
+  <app-multi-content-projection>
+    <multi-content-two />
+    <multi-content-one />
+  </app-multi-content-projection>
+</div>
