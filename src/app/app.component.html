@@ -1,3 +1,17 @@
+<ng-template #left1>
+  <p>LEFT 1</p>
+</ng-template>
+<ng-template #right1>
+  <p>RIGHT 1</p>
+</ng-template>
+
+<ng-template #left2>
+  <p>LEFT 2</p>
+</ng-template>
+<ng-template #right2>
+  <p>RIGHT 2</p>
+</ng-template>
+
 <div class="root">
   <app-content-projektion>
     <app-echo [value]="'simple content projection 1'" />
@@ -8,4 +22,18 @@
     <multi-content-two />
     <multi-content-one />
   </app-multi-content-projection>
+  <app-dynamic-tabs>
+    <app-tab-panel
+      [header]="'FirstHeader'"
+      [leftPanel]="left1"
+      [rightPanel]="right1"
+      >TabPanel 1</app-tab-panel
+    >
+    <app-tab-panel
+      [header]="'SecondHeader'"
+      [leftPanel]="left2"
+      [rightPanel]="right2"
+      >TabPanel 2</app-tab-panel
+    >
+  </app-dynamic-tabs>
 </div>

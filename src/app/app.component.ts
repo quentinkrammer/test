@@ -7,6 +7,10 @@ import {
   MultiContentProjectionComponent,
   MultiContentTwo,
 } from './multi-content-projection/multi-content-projection.component';
+import {
+  DynamicTabsComponent,
+  TabPanelComponent,
+} from './dynamic-tabs/dynamic-tabs.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +22,8 @@ import {
     MultiContentProjectionComponent,
     MultiContentOne,
     MultiContentTwo,
+    TabPanelComponent,
+    DynamicTabsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

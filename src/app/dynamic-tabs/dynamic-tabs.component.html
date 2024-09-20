@@ -1,0 +1,19 @@
+<div class="root">
+  <div class="tab-headers">
+    @for (tab of tabs; track $index) {
+      <button (click)="onTabHeader($index)">
+        {{ $index + 1 }}. {{ tab.header }}
+      </button>
+    }
+  </div>
+
+  <div class="tab-panels">
+    @for (tab of tabs; track $index) {
+      @if (activeIndex === $index) {
+        <ng-template [ngTemplateOutlet]="tab.tabPanel"></ng-template>
+        <ng-template [ngTemplateOutlet]="tab.leftPanel"></ng-template>
+        <ng-template [ngTemplateOutlet]="tab.rightPanel"></ng-template>
+      }
+    }
+  </div>
+</div>
