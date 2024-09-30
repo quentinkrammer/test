@@ -11,6 +11,7 @@ import {
   DynamicTabsComponent,
   TabPanelComponent,
 } from './dynamic-tabs/dynamic-tabs.component';
+import { SvgTestComponent } from './svg-test/svg-test.component';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import {
     MultiContentTwo,
     TabPanelComponent,
     DynamicTabsComponent,
+    SvgTestComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
